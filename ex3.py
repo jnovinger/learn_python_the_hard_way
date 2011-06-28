@@ -8,15 +8,15 @@
 print "I will now count my chickens:"
 
 # print number of hens
-print "Hens", 25 + 30 / 6
+print "Hens", 25 + 30.0 / 6
 # print number of roosters
-print "Roosters", 100 - 25 * 3 % 4
+print "Roosters", 100 - 25.0 * 3.0 % 4
 
 #print stmt
 print "Now I will count the eggs:"
 
 # print number of eggs
-print 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+print 3 + 2 + 1 - 5 + 4.0 % 2 - 1 / 4 + 6
 
 # print a stmt
 print "Is it true that 3 + 2 < 5 - 7?"
