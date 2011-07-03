@@ -6,8 +6,12 @@ Exercise 14
 
 from sys import argv
 
-script, user_name = argv
-prompt = '>'
+script, user_name, password = argv
+if password != 'my_pass':
+    print 'Oops, wrong password.'
+    quit()
+
+prompt = script + "> "
 
 print "Hi %s, I'm the %s script." % (user_name,script)
 print "I'd like to ask you a few questions."
