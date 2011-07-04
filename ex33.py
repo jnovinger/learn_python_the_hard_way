@@ -1,19 +1,18 @@
 #!/usr/bin/env python
 
-numbers = []
-
-def populate_numbers(numbers):
-    i = 0
-    limit = 6
-    while i < limit:
-        print "At the top i is %d" % i
-        numbers.append(i)
-        i += 1
+def populate_numbers(numbers, start, stop):
+    while start < stop:
+        print "At the top i is %d" % start
+        numbers.append(start)
+        start += 1
         print "Numbers now:", numbers
-        print "At the bottom i is %d" % i
+        print "At the bottom i is %d" % start
     return numbers
 
-numbers = populate_numbers(numbers)
+start = 0
+stop = 6
+numbers = []
+numbers = populate_numbers(numbers, start, stop)
 
 print "The numbers: "
 
