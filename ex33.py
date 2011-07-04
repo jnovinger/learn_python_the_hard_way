@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 
 def populate_numbers(numbers, start, stop, increment = 1):
-    while start < stop:
-        print "At the top i is %d" % start
-        numbers.append(start)
-        start += increment
+
+    for number in range(start, stop, increment):
+        print "At the top i is %d" % number
+        numbers.append(number)
         print "Numbers now:", numbers
-        print "At the bottom i is %d" % start
+        print "At the bottom i is %d" % number
+        
     return numbers
+
 
 start = 0
 stop = 6
